@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Broccoli &amp; Co</string>
+    <string name="congratulations_title_dialog">Congratulations!</string>
+    <string name="congratulations_desc_dialog"><![CDATA[You will be one of the first to experience Broccoli & Co. when we launch.]]></string>
+    <string name="ok_text_button">OK</string>
+    <string name="email_already_registered_desc_dialog">You have already registered this email.</string>
+    <string name="already_done_title_dialog">Already done!</string>
+    <string name="cancelled_invite_title_dialog">Cancelled invite</string>
+    <string name="cancelled_invite_desc_dialog">Your invite has been successfully cancelled.</string>
+    <string name="cancel_invite_button">Cancel existing invite</string>
+    <string name="request_an_invite_button">Request an invite</string>
+    <string name="are_you_sure_cancel">Are you sure you want to cancel the invite?</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="error_full_name">Must be at least 3 characters</string>
+    <string name="hint_email">Email</string>
+    <string name="error_email">Invalid email address</string>
+    <string name="hint_confirm_email">Confirm email</string>
+    <string name="error_confirm_email">Email address doesn\'t match</string>
+    <string name="btn_send">Send</string>
+    <string name="main_activity_heading">Make health simple, leave it to us.</string>
+    <string name="main_heading_desc">Get the inside scoop when the new way to stay healthy is launched.</string>
+</resources>

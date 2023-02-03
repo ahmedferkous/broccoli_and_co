@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="700dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/request_an_invite_button"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    trokeWidth="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/hint_full_name"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidth="0.5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTxtFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/cream"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="start|center_vertical"
+                        android:scrollbars="horizontal"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtViewFullNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/error_full_name"
+                    android:textColor="@color/error"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/hint_email"
+                    app:boxStrokeWidth="0.5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTxtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/cream"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="start|center_vertical"
+                        android:scrollbars="horizontal"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtViewEmailError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/error_email"
+                    android:textColor="@color/error"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/hint_confirm_email"
+                    app:boxStrokeWidth="0.5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTxtConfirmEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/cream"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="start|center_vertical"
+                        android:scrollbars="horizontal"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtViewConfirmEmailError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/error_confirm_email"
+                    android:textColor="@color/error"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressCircleSending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/btn_send"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/txtViewRequestError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/error"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
